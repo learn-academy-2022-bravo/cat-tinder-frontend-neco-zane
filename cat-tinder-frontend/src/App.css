@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f700c2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  background-color: #2a56e7;
+  color: rgb(0, 253, 25);
+  margin-bottom:  5px;
+  font-size: 50px;
+}
+
+.footer {
+  background-color: rgb(43, 103, 223);
+  color:rgb(19, 252, 85); 
+  margin-bottom: 5px; 
+  font-size: 20px; 
+  font-style:;
+}
+
+.home {
+  color: rgb(220, 25, 207); 
+  margin-bottom: 5px; 
+  font-size: 25px; 
+}
+
+.notFound {
+  color: rgb(255, 0, 0); 
+  margin-bottom: 5px; 
+  font-size: 40px; 
 }

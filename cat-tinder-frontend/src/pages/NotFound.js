@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
-class NotFound extends Component {
+export default class NotFound extends Component {
     render() {
-        return (
-            <div>
-                <h3>I am Cat NotFound</h3>
-            </div>
-        );
+      return (
+        <>
+        <div className="notFound">NotFound</div>
+        <h1> Cat Error </h1>
+        </>
+      )
     }
-}
-
-export default NotFound;
+  }
