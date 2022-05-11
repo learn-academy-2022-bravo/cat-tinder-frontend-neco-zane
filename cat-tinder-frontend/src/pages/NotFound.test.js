@@ -13,14 +13,11 @@ import NotFound from './NotFound'
 //Allows us to utilize the adapter we import in earlier, allowing us to call and render a component.
 Enzyme.configure({adapter: new Adapter()})
 
-describe("When the NotFound renders", ()=> {
-  it("shows 4 NavItems", ()=> {
-      const renderedNotFound = shallow(<NotFound/>)
-
-      const renderedNavItems = renderedNotFound.find("NavItem")
-
-      expect(renderedNavItems.length).toEqual(0)
-
+describe("When NotFound renders", () => {
+  it("displays a heading", () => {
+    const notFound = shallow(<NotFound />)
+    const notFoundHeadingText = notFound.find("h3").text()
+    expect(notFoundHeadingText).toEqual("ugligest dog in the world")
   })
 })
 

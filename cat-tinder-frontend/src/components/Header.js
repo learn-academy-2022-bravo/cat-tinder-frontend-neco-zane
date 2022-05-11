@@ -29,15 +29,3 @@ class Header extends Component {
   }
 }
 export default Header
-
-
-
-// export default class Header extends Component {
-//     render() {
-//       return (
-//         <>
-//         <div className="header">Cat Tinder</div>
-//         </>
-//       )
-//     }
-//   }

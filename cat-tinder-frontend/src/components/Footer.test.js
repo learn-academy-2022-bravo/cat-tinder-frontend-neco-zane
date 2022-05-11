@@ -14,12 +14,12 @@ import Footer from './Footer'
 Enzyme.configure({adapter: new Adapter()}) 
 
 describe("When the Footer renders", ()=> {
-    it("shows 4 NavItems", ()=> { 
+    it("shows 3 NavItems", ()=> { 
         const renderedFooter= shallow(<Footer/>)
 
         const renderedNavItems = renderedFooter.find("NavItem")
 
-        expect(renderedNavItems.length).toEqual(4)
+        expect(renderedNavItems.length).toEqual(3)
 
     })
 })
