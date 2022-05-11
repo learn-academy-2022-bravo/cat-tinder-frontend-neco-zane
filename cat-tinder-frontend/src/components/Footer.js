@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 
-class Footer extends Component {
+export default class Footer extends Component {
     render() {
-        return (
-            <div>
-                <h3>I am the Footer</h3>
-            </div>
-        );
+      return (
+        <div className="footer">Create by Zane & Neco</div>
+      )
     }
-}
-
-export default Footer;
+  }
