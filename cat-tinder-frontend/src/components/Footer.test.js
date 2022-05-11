@@ -19,7 +19,7 @@ describe("When the Footer renders", ()=> {
 
         const renderedNavItems = renderedFooter.find("NavItem")
 
-        expect(renderedNavItems.length).toEqual(0)
+        expect(renderedNavItems.length).toEqual(4)
 
     })
 })
