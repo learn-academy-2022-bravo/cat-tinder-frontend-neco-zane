@@ -6,9 +6,10 @@ class NotFound extends Component {
   render() {
     return(
       <div className="page-body">
-        <h3>ugligest dog in the world</h3>
-        <br />
+         <br />
+        <h3>No cat, just the ugligest dog in the world</h3>
         <img src={notCat} alt="ugligest dog in the world" className="cat-friend" />
+        <br />
       </div>
     )
   }

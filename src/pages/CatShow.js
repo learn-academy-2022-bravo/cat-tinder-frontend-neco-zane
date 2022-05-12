@@ -3,9 +3,12 @@ import React, { Component } from 'react';
 class CatShow extends Component {
     render() {
         return (
-            <div>
+            <>
                 <h3>I am the Cat Show</h3>
-            </div>
+                <p>{this.props.cat.name}</p>
+                <p>{this.props.cat.age}</p>
+                <p>{this.props.cat.enjoys}</p>
+            </>
         );
     }
 }

@@ -44,11 +44,15 @@
 }
 
 .footer {
-  background-color: rgb(43, 103, 223);
+  position: fixed;
+  background-color: rgb(255, 21, 0);
   color:rgb(19, 252, 85); 
   margin-bottom: 5px; 
   font-size: 20px; 
-  font-style:;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .home {
