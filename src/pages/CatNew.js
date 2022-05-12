@@ -23,10 +23,6 @@ class CatNew extends Component {
     handleChange = (e) => {
         let { form } = this.state
         form[e.target.name] = e.target.value
-        // form["name"]
-        // form["age"]
-        // form["enjoys"]
-    
         this.setState({ form: form })    
     }
 
@@ -39,40 +35,41 @@ class CatNew extends Component {
             <>
                 <h3>I am the Cat New</h3>
                 <Form>
-  <FormGroup>
-    <Label for="name">Cat's Name</Label>
-    <Input
-      name="name"
-      type="text"
-      value={this.state.form.name}
-      onChange={this.handleChange}
-    />
-  </FormGroup>
-  <FormGroup>
-    <Label for="age">Cat's Age </Label>
-    <Input
-      name="age"
-      type="number"
-      value={this.state.form.age}
-      onChange={this.handleChange}
-    />
-  </FormGroup>
-  <FormGroup>
-    <Label for="enjoys">What does cat enjoy?</Label>
-    <Input
-      name="enjoys"
-      type="text"
-      value={this.state.form.enjoys}
-      onChange={this.handleChange}
-    />
-  </FormGroup>
-  <Button
-      onClick = {this.handleSubmit} 
-    >
-    Add a New Cat
-  </Button>
-  </Form>
-  {this.state.submitted && <Redirect to="/catindex" />}
+                    <FormGroup>
+                        <Label for="name">Cat's Name</Label>
+                        <Input
+                            name="name"
+                            type="text"
+                            value={this.state.form.name}
+                            onChange={this.handleChange}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="age">Cat's Age </Label>
+                        <Input
+                            name="age"
+                            type="number"
+                            value={this.state.form.age}
+                            onChange={this.handleChange}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                            <Label for="enjoys">What does cat enjoy?</Label>
+                            <Input
+                                name="enjoys"
+                                type="text"
+                                value={this.state.form.enjoys}
+                                onChange={this.handleChange}
+                        />
+                    </FormGroup>
+                     <Button
+                        onClick = {this.handleSubmit} 
+                     >
+                      Add a New Cat
+                    </Button>
+                </Form>
+                {this.state.submitted && <Redirect to="/catindex" />
+                }
             </>
         );
     }
